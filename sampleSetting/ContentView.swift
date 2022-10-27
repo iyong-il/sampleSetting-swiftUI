@@ -196,51 +196,9 @@ struct ContentView: View {
               .background(.gray)
               .foregroundColor(.white)
               .cornerRadius(6)
-            NavigationLink("일반") {
-              List {
-                Section {
-                  HStack {
-                    NavigationLink("정보") {
-                      Text("정보 화면")
-                    }
-                  }
-                }
-                Section {
-                  HStack {
-                    NavigationLink("키보드") {
-                      Text("키보드 화면")
-                    }
-                  }
-                  HStack {
-                    NavigationLink("게임컨트롤러") {
-                      Text("게임컨트롤러 화면")
-                    }
-                  }
-                  HStack {
-                    NavigationLink("서체") {
-                      Text("서체화면")
-                    }
-                  }
-                  HStack {
-                    NavigationLink("언어 및 지역") {
-                      Text("언어 및 지역 화면")
-                    }
-                  }
-                  HStack {
-                    NavigationLink("사전") {
-                      Text("사전 화면")
-                    }
-                  }
-                }
-                Section {
-                  HStack {
-                    NavigationLink("전송 또는 iPhone재설정") {
-                      Text("전송 또는 iPhone재설정 화면")
-                    }
-                  }
-                }
-              }
 
+            NavigationLink("일반") {
+              NormalView()
             }
           }
           HStack {
